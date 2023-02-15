@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documen></title>
+  </head>
+  <body>
+    <script>
+      //문자열 String
+      let name = "John Doe";
+      let name2 = "John Doe";
+
+      let doubleQuote = "He is called 'Johnny'";
+      console.log(doubleQuote);
+
+      let singleQuote = "He is called 'Johnny'";
+      let doubleQuote2 = 'He is called "Johnny"'; // 역슬래쉬 사용시 특수문자를 일반문자로 바꿔줌
+      console.log(doubleQuote2);
+
+      // 숫자 Number
+      let x = 3;
+      let y = 3.14;
+
+      //undefined
+      let u = undefined; // undefined도 하나의 datatype
+      console.log(u);
+
+      //Null
+      let n = null;
+      console.log(n);
+
+      //object
+      let person = {};
+      //   person.firstName = "재석";
+      //   person.lastName = "유";
+      //   person.age = 50;\
+
+      person["firstName"] = "재석";
+      person["lastName"] = "유";
+      person["age"] = "50";
+
+      console.log(person.firstName);
+      console.log(person["lastName"]);
+
+      // 방식 1은 두 가지 사용법이 있음.
+      // 방식 1은 =을 사용하고 방식 2는 콜론을 사용함
+
+      let person2 = {
+        firstName: "종국",
+        lastName: "김",
+        age: 47,
+        person1: person,
+      };
+
+      console.log(person2);
+
+      person2.email = "yu@gmail.com";
+
+      //배열 -Array 여러 개의 데이터를 담을 수 있는 그릇
+      //배열은 대괄호 object는 중괄호
+
+      let arr1 = ["Hyundai", "KIA", "Volvo"];
+      console.log(arr1[0]);
+      console.log(arr1[1]);
+      console.log(arr1[2]);
+
+      let arr2 = [3, 7, 2, 9, 12];
+      console.log(arr2[2]);
+
+      let arr3 = ["Hyndai", 3, undefined];
+
+      let arr4 = [person, person2];
+
+      let arr5 = [];
+      arr5[0] = 1;
+      arr5[1] = 2;
+
+      //Boolean 참/거짓을 나타내는 datatype
+
+      let isAdult = true;
+      let x2 = 5;
+      let y2 = 7;
+      console.log(x2 > y2);
+      console.log(typeof x2);
+      console.log(typeof isAdult);
+      console.log(typeof name2);
+      console.log(typeof person2);
+      console.log(typeof arr1); // object
+    </script>
+  </body>
+</html>
